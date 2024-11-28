@@ -1,0 +1,91 @@
+.main{
+    // font-family: 'Manrope';
+    // color: red;
+    // font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+margin-top: 18px;
+// margin-left: 18px;
+// margin-right: 18px;
+// margin-left: auto;
+justify-content: space-around;
+height: 72px;
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 70px;
+opacity: 1;
+display: flex;
+align-items: center;
+}
+
+.logo{
+    width: 211px;
+    height: 48px;
+    background: transparent url('../../../assets/images/TestLogo/TestLogo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    p{
+        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+        img{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .selected{
+        background: #01F0D0 0% 0% no-repeat padding-box;
+border-radius: 41px;
+opacity: 1;
+    }
+}
+
+.option{
+    // border: 2px dotted purple;
+    
+    min-width: 122px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+}
+
+.doctor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    div{
+        height: 100%;
+    }
+    img{
+        margin-right: 1rem;
+        width: 44px;
+    height: 44px;
+    }
+}
+
+.doctor-details{
+   :nth-child(2){
+    margin-top: -1rem;
+   }
+}
+
+.settings{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.drname{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-072635);
+}
+
+.drtitle{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-707070);
+}

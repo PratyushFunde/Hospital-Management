@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="title">
+        <h2>Diagnosis History</h2>
+    </div>
+    <div class="graph-main m20 p20">
+        <div class="title-n-graph">
+            <div class="title">
+                <h2>Blood Pressure</h2>
+
+                <select name id="dropdn" class=" body-regular-14">
+                    <option value>Last 6 Months</option>
+                </select>
+
+            </div>
+
+            <div class="graph">
+                <canvas id="bp-graph"></canvas>
+
+            </div>
+        </div>
+        <div class="readings ">
+            <div class="systolic ">
+                <div class="r1">
+
+                    <div class="circle1"></div>
+                    <span>Systolic</span>
+                </div>
+                <p class="number">160</p>
+                <p>Higher Than Average</p>
+            </div>
+            <div class="diastolic ">
+                <div class="r1 ">
+
+                    <div class="circle2"></div>
+                    <span>Diastolic</span>
+                </div>
+                <p class="number">78</p>
+                <p>Lower Than Average</p>
+            </div>
+        </div>
+    </div>
+    <div class="cards">
+        <app-cards></app-cards>
+    </div>
+</div>

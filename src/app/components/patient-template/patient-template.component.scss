@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    margin-top: 0.5rem;
+
+    img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .name-image {
+        // border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .name-age-gender {
+        p:nth-of-type(1) {
+            margin: 0;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--unnamed-color-072635);
+            text-align: left;
+            font: normal normal bold 14px/19px Manrope;
+            letter-spacing: 0px;
+            color: #072635;
+            opacity: 1;
+
+        }
+
+        p:nth-of-type(2) {
+            margin: 0;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--unnamed-color-707070);
+            text-align: left;
+            font: normal normal normal 14px/19px Manrope;
+            letter-spacing: 0px;
+            color: #707070;
+            opacity: 1;
+        }
+    }
+}
+
+.icon {
+    width: 18px;
+    height: 4px;
+    background: transparent url('../../../assets/images/more_horiz_FILL0_wght300_GRAD0_opsz24/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+}
