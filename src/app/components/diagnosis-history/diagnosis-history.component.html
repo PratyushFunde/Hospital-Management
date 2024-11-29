@@ -25,8 +25,8 @@
                     <div class="circle1"></div>
                     <span>Systolic</span>
                 </div>
-                <p class="number">160</p>
-                <p>Higher Than Average</p>
+                <p class="number">{{systolic_data[5]}}</p>
+                <p><img src="../../../assets/images/ArrowUp/ArrowUp.png" class="icon" alt=""> Higher Than Average</p>
             </div>
             <div class="diastolic ">
                 <div class="r1 ">
@@ -34,12 +34,12 @@
                     <div class="circle2"></div>
                     <span>Diastolic</span>
                 </div>
-                <p class="number">78</p>
-                <p>Lower Than Average</p>
+                <p class="number">{{diastolic_data[5]}}</p>
+                <p><img src="../../../assets/images/ArrowDown/ArrowDown.png" class="icon" alt=""> Lower Than Average</p>
             </div>
         </div>
     </div>
     <div class="cards">
-        <app-cards></app-cards>
+        <app-cards [respRate]="resRate" [bpm]="bpm" [temperature]="temperature"></app-cards>
     </div>
 </div>

@@ -13,25 +13,10 @@
                     <th>Status</th>
                 </tr>
             </thead>
-            <tr>
-                <td>Hypertension</td>
-                <td>Chronic high blood pressure</td>
-                <td>Under Observation</td>
-            </tr>
-            <tr>
-                <td>Type 2 Diabetes</td>
-                <td>Insulin resistance and elevated blood sugar</td>
-                <td>Cured</td>
-            </tr>
-            <tr>
-                <td>Asthma</td>
-                <td>Recurrent episodes of bronchial constriction</td>
-                <td>Inactive</td>
-            </tr>
-            <tr>
-                <td>Osteoarthritis</td>
-                <td>Degenerative joint disease</td>
-                <td>Untreated</td>
+            <tr *ngFor="let i of jessicaData?.diagnostic_list">
+                <td>{{i.name}}</td>
+                <td>{{i.description}}</td>
+                <td>{{i.status}}</td>
             </tr>
         </table>
     </div>

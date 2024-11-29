@@ -3,24 +3,8 @@
         <p>Lab Results</p>
     </div>
     <div class="results-list">
-        <div class="result ">
-                    <p>Blood Test</p>
-                    <div class="logo mr18"></div>
-        </div>
-        <div class="result ">
-                    <p>CT Scans</p>
-                    <div class="logo mr18"></div>
-        </div>
-        <div class="result ">
-                    <p>Radiology Reports</p>
-                    <div class="logo mr18"></div>
-        </div>
-        <div class="result ">
-                    <p>X-Rays</p>
-                    <div class="logo mr18"></div>
-        </div>
-        <div class="result ">
-                    <p>Urine Test</p>
+        <div class="result" *ngFor="let i of jessicaData?.lab_results">
+                    <p>{{i}}</p>
                     <div class="logo mr18"></div>
         </div>
     </div>
