@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { patient } from '../../models/patient';
+import { GetPatientsService } from '../../services/get-patients.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-lab-results',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './lab-results.component.html',
   styleUrl: './lab-results.component.scss'
 })
 export class LabResultsComponent {
+  getDataService = inject(GetPatientsService)
 
+  jessicaData?: patient;
+
+  ngOnInit() {
+    this.getDataService.data$.subscribe((response: patient[]) => {
+      this.jessicaData = response[3];
+      // console.log(this.jessicaData.diagnostic_list);
+    })
+  }
 }

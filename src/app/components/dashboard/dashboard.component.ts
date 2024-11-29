@@ -5,6 +5,7 @@ import { DiagnosisHistoryComponent } from "../diagnosis-history/diagnosis-histor
 import { PatientDetailsComponent } from "../patient-details/patient-details.component";
 import { DiagnosticListComponent } from "../diagnostic-list/diagnostic-list.component";
 import { LabResultsComponent } from "../lab-results/lab-results.component";
+import { GetPatientsService } from '../../services/get-patients.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,5 +15,14 @@ import { LabResultsComponent } from "../lab-results/lab-results.component";
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
+
+
+  constructor(private getDataService:GetPatientsService){
+    
+  }
+
+  getData(){
+    this.getDataService.getData()
+  }
 
 }

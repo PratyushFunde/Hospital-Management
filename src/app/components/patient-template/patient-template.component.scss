@@ -3,7 +3,7 @@
     justify-content: space-between;
 
     align-items: center;
-    margin-top: 0.5rem;
+    padding-top: 0.5rem;
 
     img {
         width: 48px;
@@ -50,4 +50,16 @@
     width: 18px;
     height: 4px;
     background: transparent url('../../../assets/images/more_horiz_FILL0_wght300_GRAD0_opsz24/more_horiz_FILL0_wght300_GRAD0_opsz24.png') 0% 0% no-repeat padding-box;
+    margin-right: 18px;
+}
+
+.list {
+    height: 700px;
+    overflow-y: auto;
+    border-radius: 14px;
+}
+
+.selected {
+    background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
+    background: #D8FCF7 0% 0% no-repeat padding-box;
 }

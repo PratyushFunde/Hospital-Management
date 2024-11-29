@@ -8,9 +8,10 @@ body {
   opacity: 1;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
+
 .border-1 {
   border: 2px dotted red;
 }
@@ -34,6 +35,7 @@ body {
 .border-6 {
   border: 2px dotted black;
 }
+
 // .border-black {
 //   // border: 2px solid black;
 // }
@@ -166,7 +168,7 @@ body {
 
 /* Force the thumb height to 100px */
 ::-webkit-scrollbar-thumb {
-  height: 10px;
+  height: 100px;
   /* This works only if the container's content height is limited */
 }
 
@@ -175,15 +177,19 @@ body {
 .p20 {
   padding: 20px !important;
 }
+
 .pl20 {
   padding-left: 20px !important;
 }
+
 .pr20 {
   padding-right: 20px !important;
 }
+
 .pt20 {
   padding-top: 20px !important;
 }
+
 .pb20 {
   padding-bottom: 20px !important;
 }
