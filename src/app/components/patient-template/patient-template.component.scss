@@ -63,3 +63,24 @@
     background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
     background: #D8FCF7 0% 0% no-repeat padding-box;
 }
+
+.searchInput{
+
+    width: 70%;
+    // margin-top: 18px;
+    // margin-left: 18px;
+    padding: 6px ;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 7px;
+}
+
+.searchInputBox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    // margin-bottom: 7px;
+    // width: fit-content;
+}
+

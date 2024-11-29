@@ -1,6 +1,15 @@
 <div class="list">
+    <div class="searchInputBox" *ngIf="searching">
 
-    <div class="main pl20 " *ngFor="let i of data" [ngClass]="{'selected':i.name==='Jessica Taylor'}">
+        <input type="text" class="searchInput" placeholder="Search"  [(ngModel)]="searchString" (ngModelChange)="setFilteredData()">
+        <div class="searchClose" (click)="onSearchClose()" >
+            
+            <i class="fa-solid fa-x"  ></i>
+        </div>
+    </div>
+    <!-- <p>{{searchString}}</p> -->
+    <div class="main pl20 " *ngFor="let i of filtered_data"
+        [ngClass]="{'selected':i.name==='Jessica Taylor'}">
         <div class="name-image">
             <img src="{{i.profile_picture}}" alt>
             <div class="name-age-gender">
@@ -8,7 +17,7 @@
                 <p>{{i.gender}}, <span>{{i.age}}</span> </p>
             </div>
         </div>
-        <div class="icon pr20 ">
+        <div class="icon pr20" >
             <!-- <img src="../../../assets/images/more_vert_FILL0_wght300_GRAD0_opsz24/more_vert_FILL0_wght300_GRAD0_opsz24.png" alt=""> -->
         </div>
     </div>

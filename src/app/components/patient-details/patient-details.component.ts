@@ -18,7 +18,7 @@ export class PatientDetailsComponent {
   ngOnInit(){
     this.getDataService.data$.subscribe((response:patient[])=>{
       this.jessicaData=response[3];
-      console.log(this.jessicaData);
+      // console.log(this.jessicaData);
     })
   }
 
