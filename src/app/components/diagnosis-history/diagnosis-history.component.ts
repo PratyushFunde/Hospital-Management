@@ -37,7 +37,7 @@ export class DiagnosisHistoryComponent {
       this.systolic=this.jessicaData.diagnosis_history;
       // console.log(this.systolic)
       this.setSystolicDiastolicData()
-      console.log(this.jessicaData.diagnosis_history)
+      // console.log(this.jessicaData.diagnosis_history)
     })
   }
 
@@ -57,11 +57,8 @@ export class DiagnosisHistoryComponent {
         this.systolic_data.push(element.blood_pressure?.systolic?.value ?? 0)
         this.diastolic_data.push(element.blood_pressure?.diastolic?.value??0)
       });
-      console.log(this.systolic_data.slice(0,6).reverse())
-      console.log(this.diastolic_data.slice(0,6))
       this.systolic_data=this.systolic_data.slice(0,6).reverse();
       // this.diastolic_data=this.diastolic_data.slice(0,6).reverse();
-      console.log(this.diastolic_data)
     }
 
   drawChart(){

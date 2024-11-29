@@ -1,13 +1,15 @@
 <div class="main">
     <div class="header">
+        
+        <p *ngIf="!searching">Patients</p>
+        <div (click)="onSearchClick()">
 
-        <p>Patients</p>
-        <div class="">
+           
 
-            <img src="../../../assets/images/search_FILL0_wght300_GRAD0_opsz24/search_FILL0_wght300_GRAD0_opsz24.png" alt="">
+            <img src="../../../assets/images/search_FILL0_wght300_GRAD0_opsz24/search_FILL0_wght300_GRAD0_opsz24.png" alt="" *ngIf="!searching">
         </div>
     </div>
     
-        <app-patient-template></app-patient-template>
+        <app-patient-template [searching]="searching" (dataEmitter)="searchClose($event)"></app-patient-template>
 
 </div>
