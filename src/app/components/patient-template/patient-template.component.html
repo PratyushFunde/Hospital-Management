@@ -8,8 +8,8 @@
         </div>
     </div>
     <!-- <p>{{searchString}}</p> -->
-    <div class="main pl20 " *ngFor="let i of filtered_data"
-        [ngClass]="{'selected':i.name==='Jessica Taylor'}">
+    <div class="main pl20 " *ngFor="let i of filtered_data" 
+        [ngClass]="{'selected':i.name==='Jessica Taylor'}" (click)="onPatientClick(i)">
         <div class="name-image">
             <img src="{{i.profile_picture}}" alt>
             <div class="name-age-gender">
