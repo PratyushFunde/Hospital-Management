@@ -3,6 +3,7 @@ import { GetPatientsService } from '../../services/get-patients.service';
 import { patient } from '../../models/patient';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SelectedPatientService } from '../../services/selected-patient.service';
 
 @Component({
   selector: 'app-patient-template',
@@ -16,6 +17,8 @@ export class PatientTemplateComponent {
   data: patient[] = []
   filtered_data:patient[]=[]
   searchString:string=''
+
+  constructor(private updatePatient:SelectedPatientService){}
 
   @Output() dataEmitter=new EventEmitter<boolean>();
 
@@ -41,6 +44,11 @@ export class PatientTemplateComponent {
   {
     this.searching=false;
     this.dataEmitter.emit(this.searching);
+  }
+
+  onPatientClick(data:patient){
+    console.log(data)
+    this.updatePatient.updateSelectedPatient(data)
   }
 
 }

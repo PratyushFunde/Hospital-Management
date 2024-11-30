@@ -46,3 +46,9 @@
         opacity: 1;
     }
 }
+
+.results-list{ 
+    // border: 2px solid black;
+    max-height: 200px;
+    overflow-y: auto;
+}

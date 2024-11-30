@@ -1,10 +1,10 @@
 <div class="main">
     <div class="image-container">
 
-        <div class="image"><img src="../../../assets/images/Layer 2/Layer 2.png" alt=""></div>
+        <div class="image"><img src="{{selectedPatient.profile_picture}}" alt=""></div>
     </div>
     <div class="name">
-        <p>{{jessicaData.name}}</p>
+        <p>{{selectedPatient.name}}</p>
     </div>
 
     <div class="details">
@@ -13,35 +13,35 @@
         <div class="logo1 logo"></div>
         <div class="data">
             <p>Date Of Birth</p>
-            <p>{{jessicaData.date_of_birth}}</p>
+            <p>{{selectedPatient.date_of_birth}}</p>
         </div>
     </div>
     <div class="gender subdetails">
         <div class="logo2 logo"></div>
         <div class="data">
             <p>Gender</p>
-            <p>{{jessicaData.gender}}</p>
+            <p>{{selectedPatient.gender}}</p>
         </div>
     </div>
     <div class="contact subdetails">
         <div class="logo3 logo"></div>
         <div class="data">
             <p>Contact Info</p>
-            <p>{{jessicaData.phone_number}}</p>
+            <p>{{selectedPatient.phone_number}}</p>
         </div>
     </div>
     <div class="emergency-contact subdetails">
         <div class="logo4 logo"></div>
         <div class="data">
             <p>Emergency Contacts</p>
-            <p>{{jessicaData.emergency_contact}}</p>
+            <p>{{selectedPatient.emergency_contact}}</p>
         </div>
     </div>
     <div class="insurance subdetails">
         <div class="logo5 logo"></div>
         <div class="data">
             <p>Insurance Provider</p>
-            <p>{{jessicaData.insurance_type}}</p>
+            <p>{{selectedPatient.insurance_type}}</p>
         </div>
     </div>
 </div>
